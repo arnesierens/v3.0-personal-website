@@ -1,0 +1,19 @@
+// Import other files
+
+@import 'reset';
+@import 'functions';
+@import 'variables';
+
+// General
+
+body {
+    font: 400 100% $font-main;
+    background-color: $color-bg;
+}
+
+h1 {
+    font-family: $font-titles;
+    font-size: em(32);
+    font-weight: 400;
+    letter-spacing: em(2);
+}
