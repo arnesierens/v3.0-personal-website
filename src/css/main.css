@@ -28,12 +28,72 @@ table {
 
 body {
   font: 400 100% "Work Sans", Helvetica, Arial, sans-serif;
+  color: #606c78;
   background-color: #fff; }
 
+.wrapper {
+  max-width: 450px;
+  margin: 0 auto; }
+
+header {
+  padding: 50px 0;
+  text-align: center;
+  border-bottom: 1px solid #eee; }
+
+.avatar {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+  .avatar > img {
+    width: 100px;
+    height: 100px; }
+
 h1 {
-  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
-  font-size: 2em;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 1.6875em;
   font-weight: 400;
-  letter-spacing: 0.125em; }
+  letter-spacing: 0.0625em;
+  color: #2d3339;
+  padding: 25px 0 5px; }
+
+h2 {
+  font-size: 0.875em;
+  color: #bbb;
+  text-transform: uppercase; }
+
+.content {
+  padding: 50px 6.25%;
+  font-size: 1em; }
+  .content > p {
+    padding-bottom: 30px;
+    line-height: 30px; }
+  .content a {
+    color: #2b88bb;
+    text-decoration: none; }
+
+.first {
+  font-weight: bold; }
+
+.social {
+  padding-top: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px; }
+  .social > li {
+    margin-bottom: 20px; }
+    .social > li > a {
+      display: block;
+      text-align: center;
+      border: 1px solid #eee;
+      padding: 5px 10px;
+      border-radius: 3px; }
+      .social > li > a:hover {
+        border-color: #2b88bb; }
+
+footer {
+  padding: 50px 0;
+  font-size: 0.875em;
+  text-align: center;
+  border-top: 1px solid #eee; }
 
 /*# sourceMappingURL=main.css.map */

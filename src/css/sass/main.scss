@@ -8,12 +8,97 @@
 
 body {
     font: 400 100% $font-main;
+    color: $color-text;
     background-color: $color-bg;
+}
+
+.wrapper {
+    max-width: $wrapper-width;
+    margin: 0 auto;
+}
+
+// Header
+
+header {
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 1px solid $color-border;
+}
+
+.avatar {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    > img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 h1 {
     font-family: $font-titles;
-    font-size: em(32);
+    font-size: em(27);
     font-weight: 400;
-    letter-spacing: em(2);
+    letter-spacing: em(1);
+    color: $color-h1;
+    padding: 25px 0 5px;
+}
+
+h2 {
+    font-size: em(14);
+    color: $color-h2;
+    text-transform: uppercase;
+}
+
+// Content
+
+.content {
+    padding: 50px calc-percent(25, 400);
+    font-size: em(16);
+    
+    > p {
+        padding-bottom: 30px;
+        line-height: 30px;
+    }
+    
+    a {
+        color: $color-links;
+        text-decoration: none;
+    }
+}
+
+.first {
+    font-weight: bold;
+}
+
+.social {
+    padding-top: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    
+    > li {
+        margin-bottom: 20px;
+        
+        > a {
+            display: block;
+            text-align: center;
+            border: 1px solid $color-border;
+            padding: 5px 10px;
+            border-radius: 3px;
+            
+            &:hover {
+                border-color: $color-links;
+            }
+        } 
+    }
+}
+
+// Footer
+footer {
+    padding: 50px 0;
+    font-size: em(14);
+    text-align: center;
+    border-top: 1px solid $color-border;
 }
