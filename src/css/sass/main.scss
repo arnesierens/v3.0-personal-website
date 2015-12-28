@@ -2,12 +2,14 @@
 
 @import 'reset';
 @import 'functions';
+@import 'utilities';
 @import 'variables';
+@import 'font-awesome';
 
 // General
 
 body {
-    font: 400 100% $font-main;
+    font: $font-weight-regular 100% $font-main;
     color: $color-text;
     background-color: $color-bg;
 }
@@ -22,7 +24,7 @@ body {
 header {
     padding: 50px 0;
     text-align: center;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px dashed $color-border;
 }
 
 .avatar {
@@ -30,26 +32,73 @@ header {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
 
     > img {
         width: 100px;
         height: 100px;
+        border-radius: 50%;
     }
 }
 
 h1 {
     font-family: $font-titles;
     font-size: em(27);
-    font-weight: 400;
-    letter-spacing: em(1);
+    font-weight: $font-weight-title;
+    letter-spacing: 2px;
     color: $color-h1;
     padding: 25px 0 5px;
 }
 
 h2 {
-    font-size: em(14);
+    font-size: em(13);
     color: $color-h2;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $font-weight-medium;
+}
+
+.social li {
+    display: inline-block;
+    padding-top: 30px;
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    > a {
+        display: block;
+    }
+}
+
+.social-icon {
+    font-size: em(26);
+    color: $color-border;
+}
+
+.fa-twitter:hover {
+    color: $color-twitter;
+}
+
+.fa-instagram:hover {
+    color: $color-instagram;
+}
+
+.fa-facebook-official:hover {
+    color: $color-facebook;
+}
+
+.fa-linkedin:hover {
+    color: $color-linkedin;
+}
+
+.fa-github:hover {
+    color: $color-github;
+}
+
+.fa-paper-plane:hover {
+    color: $color-mail;
 }
 
 // Content
@@ -59,40 +108,26 @@ h2 {
     font-size: em(16);
     
     > p {
-        padding-bottom: 30px;
         line-height: 30px;
+        
+        &:not(:last-child) {
+            padding-bottom: 30px;
+        }
     }
     
     a {
         color: $color-links;
         text-decoration: none;
+        border-bottom: 2px solid #eee;
+        
+        &:hover {
+            border-color: $color-links;
+        }
     }
 }
 
 .first {
-    font-weight: bold;
-}
-
-.social {
-    padding-top: 20px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 20px;
-    
-    > li {
-        margin-bottom: 20px;
-        
-        > a {
-            display: block;
-            text-align: center;
-            border: 1px solid $color-border;
-            padding: 5px 10px;
-            border-radius: 3px;
-            
-            &:hover {
-                border-color: $color-links;
-            }
-        } 
-    }
+    font-weight: $font-weight-bold;
 }
 
 // Footer
@@ -100,5 +135,5 @@ footer {
     padding: 50px 0;
     font-size: em(14);
     text-align: center;
-    border-top: 1px solid $color-border;
+    border-top: 1px dashed $color-border;
 }
