@@ -49,15 +49,16 @@ body {
   color: #606c79;
   background-color: #fff; }
 
+main {
+  display: block;
+  max-width: 440px;
+  margin: 100px auto 50px;
+  padding: 0 20px; }
+
 a {
   position: relative; }
   a:active {
     top: 1px; }
-
-.wrapper {
-  max-width: 440px;
-  margin: 100px auto 50px;
-  padding: 0 20px; }
 
 header {
   text-align: center; }

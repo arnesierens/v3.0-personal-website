@@ -17,18 +17,19 @@ body {
     background-color: $color-bg;
 }
 
+main {
+    display: block;
+    max-width: $wrapper-width;
+    margin: 100px auto 50px;
+    padding: 0 20px;
+}
+
 a {
     position: relative;
 
     &:active {
         top: 1px;
     }
-}
-
-.wrapper {
-    max-width: $wrapper-width;
-    margin: 100px auto 50px;
-    padding: 0 20px;
 }
 
 // Header
