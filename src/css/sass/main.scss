@@ -20,13 +20,27 @@ body {
 main {
     display: block;
     max-width: $wrapper-width;
-    margin: 100px auto 50px;
-    padding: 0 20px;
+    margin: 0 auto;
+    
+    @media only screen and (min-width: $wrapper-width) {
+        padding: 0 20px;
+    }
+}
+
+p {
+    line-height: 30px;
+
+    &:not(:last-child) {
+        padding-bottom: 30px;
+    }
 }
 
 a {
     position: relative;
-
+    color: $color-links;
+    text-decoration: none;
+    border-bottom: 1px dotted $color-border;
+    
     &:active {
         top: 1px;
     }
@@ -36,6 +50,7 @@ a {
 
 header {
     text-align: center;
+    padding-top: 50px;
 }
 
 .avatar {
@@ -52,25 +67,15 @@ header {
 // Content
 
 .content {
-    padding: 50px 0;
+    padding: 50px 20px;
     font-size: em(16);
     
-    > p {
-        line-height: 30px;
-        
-        &:not(:last-child) {
-            padding-bottom: 30px;
-        }
+    a:hover {
+        border-color: $color-links;
     }
     
-    a {
-        color: $color-links;
-        text-decoration: none;
-        border-bottom: 1px dotted $color-border;
-        
-        &:hover {
-            border-color: $color-links;
-        }
+    @media only screen and (min-width: $wrapper-width) {
+        padding: 50px 0;
     }
 }
 
@@ -80,8 +85,13 @@ header {
 
 // Footer
 footer {
-    padding-top: 50px;
+    width: 100%;
+    padding: 50px 0;
     font-size: em(14);
     text-align: center;
     border-top: 1px dashed $color-border;
+    
+    a:hover {
+        border-color: $color-links;
+    }
 }

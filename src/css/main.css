@@ -52,16 +52,27 @@ body {
 main {
   display: block;
   max-width: 440px;
-  margin: 100px auto 50px;
-  padding: 0 20px; }
+  margin: 0 auto; }
+  @media only screen and (min-width: 440px) {
+    main {
+      padding: 0 20px; } }
+
+p {
+  line-height: 30px; }
+  p:not(:last-child) {
+    padding-bottom: 30px; }
 
 a {
-  position: relative; }
+  position: relative;
+  color: #266dbf;
+  text-decoration: none;
+  border-bottom: 1px dotted #ccc; }
   a:active {
     top: 1px; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  padding-top: 50px; }
 
 .avatar {
   display: inline-block;
@@ -74,26 +85,24 @@ header {
   border: 1px solid #f6f6f6; }
 
 .content {
-  padding: 50px 0;
+  padding: 50px 20px;
   font-size: 1em; }
-  .content > p {
-    line-height: 30px; }
-    .content > p:not(:last-child) {
-      padding-bottom: 30px; }
-  .content a {
-    color: #266dbf;
-    text-decoration: none;
-    border-bottom: 1px dotted #ccc; }
-    .content a:hover {
-      border-color: #266dbf; }
+  .content a:hover {
+    border-color: #266dbf; }
+  @media only screen and (min-width: 440px) {
+    .content {
+      padding: 50px 0; } }
 
 .first {
   font-weight: 600; }
 
 footer {
-  padding-top: 50px;
+  width: 100%;
+  padding: 50px 0;
   font-size: 0.875em;
   text-align: center;
   border-top: 1px dashed #ccc; }
+  footer a:hover {
+    border-color: #266dbf; }
 
 /*# sourceMappingURL=main.css.map */
