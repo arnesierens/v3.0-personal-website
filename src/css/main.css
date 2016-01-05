@@ -90,6 +90,12 @@ a {
   a:active {
     top: 1px; }
 
+::-moz-selection {
+  background-color: #f1f2f4; }
+
+::selection {
+  background-color: #f1f2f4; }
+
 header {
   text-align: center;
   padding-top: 50px; }

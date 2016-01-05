@@ -48,6 +48,14 @@ a {
     }
 }
 
+::-moz-selection {
+    background-color: $color-selection;
+}
+
+::selection {
+    background-color: $color-selection;
+}
+
 // Header
 
 header {
