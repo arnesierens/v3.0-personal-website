@@ -40,8 +40,12 @@ a {
     position: relative;
     color: $color-links;
     text-decoration: none;
-    border-bottom: 1px dotted $color-border;
+    border-bottom: 2px solid $color-border;
     transition: border-bottom .5s ease;
+    
+    &:hover {
+        color: #00324d;
+    }
     
     &:active {
         top: 1px;
@@ -87,10 +91,6 @@ main {
         &:not(:last-child) {
             padding-bottom: 30px;
         }
-    }
-    
-    a:hover {
-        border-color: $color-links;
     }
     
     @media only screen and (min-width: $wrapper-width) {

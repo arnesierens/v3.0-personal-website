@@ -83,10 +83,12 @@ body {
 
 a {
   position: relative;
-  color: #0068d9;
+  color: #0089d0;
   text-decoration: none;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 2px solid #f1f2f4;
   transition: border-bottom .5s ease; }
+  a:hover {
+    color: #00324d; }
   a:active {
     top: 1px; }
 
@@ -118,8 +120,6 @@ main {
     line-height: 30px; }
     main > p:not(:last-child) {
       padding-bottom: 30px; }
-  main a:hover {
-    border-color: #0068d9; }
   @media only screen and (min-width: 440px) {
     main {
       padding: 50px 0; } }
@@ -132,8 +132,8 @@ footer {
   padding: 50px 0;
   font-size: 0.875em;
   text-align: center;
-  border-top: 1px dashed #ccc; }
+  border-top: 1px dashed #f1f2f4; }
   footer a:hover {
-    border-color: #0068d9; }
+    border-color: #0089d0; }
 
 /*# sourceMappingURL=main.css.map */
