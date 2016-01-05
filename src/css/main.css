@@ -68,12 +68,11 @@ body {
   color: #606c79;
   background-color: #fff; }
 
-main {
-  display: block;
+#wrapper {
   max-width: 440px;
   margin: 0 auto; }
   @media only screen and (min-width: 440px) {
-    main {
+    #wrapper {
       padding: 0 20px; } }
 
 p {
@@ -104,13 +103,14 @@ header {
   border-radius: 50%;
   border: 1px solid #f6f6f6; }
 
-.content {
+main {
+  display: block;
   padding: 50px 20px;
   font-size: 1em; }
-  .content a:hover {
+  main a:hover {
     border-color: #266dbf; }
   @media only screen and (min-width: 440px) {
-    .content {
+    main {
       padding: 50px 0; } }
 
 .first {
