@@ -81,14 +81,9 @@ body {
     #wrapper {
       padding: 0 20px; } }
 
-p {
-  line-height: 30px; }
-  p:not(:last-child) {
-    padding-bottom: 30px; }
-
 a {
   position: relative;
-  color: #266dbf;
+  color: #0068d9;
   text-decoration: none;
   border-bottom: 1px dotted #ccc;
   transition: border-bottom .5s ease; }
@@ -113,8 +108,12 @@ main {
   display: block;
   padding: 50px 20px;
   font-size: 1em; }
+  main > p {
+    line-height: 30px; }
+    main > p:not(:last-child) {
+      padding-bottom: 30px; }
   main a:hover {
-    border-color: #266dbf; }
+    border-color: #0068d9; }
   @media only screen and (min-width: 440px) {
     main {
       padding: 50px 0; } }
@@ -129,6 +128,6 @@ footer {
   text-align: center;
   border-top: 1px dashed #ccc; }
   footer a:hover {
-    border-color: #266dbf; }
+    border-color: #0068d9; }
 
 /*# sourceMappingURL=main.css.map */

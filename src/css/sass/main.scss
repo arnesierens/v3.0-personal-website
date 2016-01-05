@@ -34,14 +34,6 @@ body {
     }
 }
 
-p {
-    line-height: 30px;
-
-    &:not(:last-child) {
-        padding-bottom: 30px;
-    }
-}
-
 a {
     position: relative;
     color: $color-links;
@@ -78,6 +70,14 @@ main {
     display: block;
     padding: 50px 20px;
     font-size: em(16);
+    
+    > p {
+        line-height: 30px;
+
+        &:not(:last-child) {
+            padding-bottom: 30px;
+        }
+    }
     
     a:hover {
         border-color: $color-links;
