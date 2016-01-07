@@ -27,15 +27,6 @@ body {
     background-color: $color-bg;
 }
 
-#wrapper {
-    max-width: $wrapper-width;
-    margin: 0 auto;
-    
-    @media only screen and (min-width: $wrapper-width) {
-        padding: 0 20px;
-    }
-}
-
 a {
     position: relative;
     color: $color-links;
@@ -59,11 +50,26 @@ a {
     background-color: $color-selection;
 }
 
+// Wrapper
+
+#wrapper {
+    max-width: $wrapper-width;
+    margin: 0 auto;
+    
+    @media only screen and (min-width: $wrapper-width) {
+        padding: 0 20px;
+    }
+}
+
 // Header
 
 header {
     text-align: center;
     padding-top: 50px;
+    
+    @media only screen and (min-width: $wrapper-width + 200px) {
+        padding-top: 100px;
+    }
 }
 
 .avatar {
@@ -102,6 +108,7 @@ main {
 }
 
 // Footer
+
 footer {
     width: 100%;
     padding: 50px 0;
