@@ -82,7 +82,7 @@ table {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); } }
-* {
+*, *::before, *::after {
   box-sizing: border-box; }
 
 html {
