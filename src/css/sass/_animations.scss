@@ -1,33 +1,44 @@
 // Animations
 
+.fade-in-down {
+    -webkit-animation: 1s fade-in-down;
+            animation: 1s fade-in-down;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+// Loop through $list-animation-classes to add a delay
+
+@each $current-class in $list-animation-classes {
+    $i: index($list-animation-classes, $current-class);
+    
+    .#{$current-class} {
+        -webkit-animation-delay: $i * $animation-delay-frequency;
+                animation-delay: $i * $animation-delay-frequency;
+    }
+}
+
+// Fade in down animation
+
 @-webkit-keyframes fade-in-down {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(-10px);
-            -ms-transform: translateY(-10px);
-                transform: translateY(-10px);
+        @include transform(translateY(-10px));
     }
   
     100% {
         opacity: 1;
-        -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-                transform: translateY(0);
+        @include transform(translateY(0));
     }
 }
 
 @keyframes fade-in-down {
     0% {
         opacity: 0;
-        -ms-transform: translateY(-10px);
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
+        @include transform(translateY(-10px));
     }
   
     100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-                transform: translateY(0);
+        @include transform(translateY(0));
     }
 }
