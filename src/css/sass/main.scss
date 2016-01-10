@@ -35,8 +35,12 @@ a {
     text-decoration: none;
     border-bottom: 1px dotted $color-border;
     
+    &:visited {
+        color: $color-links;
+    }
+    
     &:hover {
-        color: #00324d;
+        color: $color-links-hover;
     }
     
     &:active {
