@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Arne Sierens &middot; Web developer</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header role="banner">
+            <h1 class="is-upside-down">
+                <a href="/" class="avatar fade-in-down is-upside-down">Arne Sierens</a>
+            </h1>
+        </header>
+
+        <main role="main" class="is-centered">
+            <h2 class="fade-in-down fade-in-first">404</h2>
+            
+            <p class="fade-in-down fade-in-second">
+                The page you're looking for can't be found.
+            </p>
+            
+            <p class="fade-in-down fade-in-third">
+                <a href="/">Go back to my home page</a>
+            </p>
+        </main>
+        
+        <footer role="contentinfo" class="fade-in-down fade-in-last">
+            <p>
+                Copyright &copy; 1991-2016, 
+                <a href="mailto:contact@sierensarne.be">Arne Sierens</a>.
+            </p>
+        </footer>
+    </div> <!-- end #wrapper -->
+</body>
+</html>

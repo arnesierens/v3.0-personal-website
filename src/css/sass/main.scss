@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 // Import other files
 
 @import 'reset';
@@ -57,6 +58,18 @@ a {
     background-color: $color-selection;
 }
 
+
+// Headings
+
+h1 {}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    padding-bottom: 30px;
+}
+
+
 // Wrapper
 
 #wrapper {
@@ -67,6 +80,7 @@ a {
         padding: 0 20px;
     }
 }
+
 
 // Header
 
@@ -84,11 +98,19 @@ header {
     width: 102px;
     height: 102px;
     text-indent: -9999px;
+    overflow: hidden;
     background: url('../img/avatar.png') no-repeat;
     background-size: 100px;
     border-radius: 50%;
     border: 1px solid $color-border-avatar;
 }
+
+.is-upside-down {
+    display: block;
+    margin: 0 auto;
+    @include transform(rotate(-180deg));
+}
+
 
 // Content
 
@@ -113,6 +135,11 @@ main {
 .first {
     font-weight: $font-weight-bold;
 }
+
+.is-centered {
+    text-align: center;
+}
+
 
 // Footer
 
