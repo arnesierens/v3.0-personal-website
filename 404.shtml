@@ -29,13 +29,6 @@
                 <a href="/">Go back to my home page</a>
             </p>
         </main>
-        
-        <footer role="contentinfo" class="fade-in-down fade-in-last">
-            <p>
-                Copyright &copy; 1991-2016, 
-                <a href="mailto:contact@sierensarne.be">Arne Sierens</a>.
-            </p>
-        </footer>
     </div> <!-- end #wrapper -->
 </body>
 </html>
